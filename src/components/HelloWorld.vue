@@ -33,8 +33,9 @@
 <script>
 export default {
   name: 'HelloWorld',
+  // this is where its state that we will be taking in a prop
   props: {
-    msg: String
+    msg: String // the type
   }
 }
 </script>

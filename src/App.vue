@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!-- note just like react need to wrap in one div just give one component -->
+  <div>
+    <h1>hello from a vue</h1>
+    <TodoList/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TodoList from "./components/TodoList"
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    TodoList
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  background-color: rgb(66,66,66);
+  color: aliceblue;
 }
+
 </style>
